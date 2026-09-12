@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/GeistMono-ExtraBold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body {
+    font-family: 'Geist', sans-serif;
+    align-content: center;
+}
+/* header */
+.comp_name_and_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+.company_name_logo {
+    border: 3px solid #030202;
+    margin-left: 6%;
+    width: 90px;
+    height: 0,5cm;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 12px;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+.company_name_logo:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.theme-buttons-header{
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 25px;
+    margin-right: 6%;
+    backdrop-filter: blur(10px);
+}
+
+.theme_dark {
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0);
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 25px;
+}
+
+.theme_dark:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.theme_white {
+    color: white;
+    background: black;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.theme_white:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+
+/* firstCard */
+.firstCard {
+    width: auto;
+    height: 10cm;
+    backdrop-filter: blur(10px);
+    background-color: #00000072;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 19px;
+    margin-bottom: 8%;
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.firstCard:hover{
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.firstCard-header{
+    color: rgb(253, 253, 253);
+}
+
+
+.firstCard-header-header-text {
+    padding-left: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-weight: bold;
+    border: 15cm;
+}
+
+.firstCard-header-text {
+    padding-left: 6%;
+    padding-bottom: 2%;
+    padding-right: 6%;
+}
+
+/* secondCard*/
+.secondCard {
+    width: auto;
+    height: 10cm;
+    background-color: #00000072;
+    backdrop-filter: blur(10px);
+    border-radius: 19px;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.secondCard:hover{
+    background-color: #1b1b1b;
+}
+
+.secondCard-header {
+    color: white;
+}
+
+.secondCard-header-header-text {
+    font-weight: bolder;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-bottom: 4%;
+
+}
+
+.secondCard-header-text {
+    padding-left: 7%;
+}
+
+/* second card icons */
+
+.ai_icon {
+    align-items: center;
+    gap: 5px;
+    padding-bottom: -8px;
+}
+
+.graph_icon {
+    align-items: center;
+    gap: 5px;
+}
+
+.time_icon {
+    align-items: center;
+    gap: 5px;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #000000;
+    border-radius: 19px;
+    margin-left: -3%;
+    margin-right: -3%;
+    margin-bottom: -3%;
+    text-decoration: none;
+}
+
+.footer-company-name {
+    color: white;
+    padding-left: 9%;
+    padding-top: 2%;
+    text-decoration: none;
+}
+
+.footer-buttons {
+    color: white;
+    padding-left: 12%;
+    padding-bottom: 6%;
+    text-decoration: none;
+}
