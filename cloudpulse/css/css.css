@@ -66,9 +66,9 @@ body {
 }
 
 .theme_dark {
-    color: rgb(0, 0, 0);
     background: rgba(255, 255, 255, 0);
-    border: 3px solid rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 3px solid black;
     border-radius: 25px;
 }
 
@@ -79,16 +79,16 @@ body {
 }
 
 .theme_white {
-    color: white;
-    background: black;
-    border: 3px solid black;
-    border-radius: 25px;
+    color: rgb(2, 2, 2);
+    background: none;
+    border: none;
 }
 
 .theme_white:hover {
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
     border: 3px solid rgb(255, 255, 255);
+    border-radius: 25px;
 }
 
 
@@ -202,6 +202,197 @@ body {
 
 .footer-buttons {
     color: white;
+    padding-left: 12%;
+    padding-bottom: 6%;
+    text-decoration: none;
+}
+
+/* reveal */
+
+.reveal{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* white theme */
+
+/* company_name_logo */
+body.white .company_name_logo {
+    border: 3px solid #ffffff;
+    margin-left: 6%;
+    width: 90px;
+    height: 0,5cm;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 12px;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+body.white .company_name_logo:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+body.white .theme_white {
+    background: rgba(255, 255, 255, 0);
+    color: rgb(255, 253, 253);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+body.white .theme_white:hover {
+    background: rgb(255, 255, 255); 
+    color: black;
+}
+
+body.white .theme_dark {
+    background: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+}
+
+body.white .theme_dark:hover {
+    background: rgb(1, 1, 1);
+    color: rgb(255, 253, 253);
+    border: 3px solid rgb(1, 1, 1);
+    border-radius: 25px;
+}
+
+body.white .theme-buttons-header{
+    border: 3px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 25px;
+    margin-right: 6%;
+    backdrop-filter: blur(10px);
+}
+
+/* cards */
+
+/* first */
+body.white .firstCard {
+    width: auto;
+    height: 10cm;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff72;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 19px;
+    margin-bottom: 8%;
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+body.white .firstCard:hover{
+    background-color: #fffefe;
+    color: rgb(0, 0, 0);
+}
+
+body.white .firstCard-header{
+    color: rgb(0, 0, 0);
+}
+
+
+body.white .firstCard-header-header-text {
+    padding-left: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-weight: bold;
+    border: 15cm;
+}
+
+body.white .firstCard-header-text {
+    padding-left: 6%;
+    padding-bottom: 2%;
+    padding-right: 6%;
+}
+
+/* second */
+
+body.white .secondCard {
+    width: auto;
+    height: 10cm;
+    background-color: #ffffff72;
+    backdrop-filter: blur(10px);
+    border-radius: 19px;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+body.white .secondCard:hover{
+    background-color: #ffffff;
+}
+
+body.white .secondCard-header {
+    color: rgb(0, 0, 0);
+}
+
+body.white .secondCard-header-header-text {
+    font-weight: bolder;
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-bottom: 4%;
+
+}
+
+body.white .secondCard-header-text {
+    padding-left: 7%;
+}
+
+/* second card icons */
+
+body.white .ai_icon {
+    align-items: center;
+    gap: 5px;
+    padding-bottom: -8px;
+    color: #000000;
+}
+
+body.white .graph_icon {
+    align-items: center;
+    gap: 5px;
+}
+
+body.white .time_icon {
+    align-items: center;
+    gap: 5px;
+}
+
+/* footer */
+
+body.white .footer {
+    background-color: #d6d6d6;
+    border-radius: 19px;
+    margin-left: -3%;
+    margin-right: -3%;
+    margin-bottom: -3%;
+    text-decoration: none;
+}
+
+body.white .footer-company-name {
+    color: rgb(0, 0, 0);
+    padding-left: 9%;
+    padding-top: 2%;
+    text-decoration: none;
+}
+
+body.white .footer-buttons {
+    color: rgb(0, 0, 0);
     padding-left: 12%;
     padding-bottom: 6%;
     text-decoration: none;
